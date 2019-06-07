@@ -1,80 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel="stylesheet" href="css/style.css">-->
-    <title>Login2</title>
-    <STYLE>
-        body{
-
-        margin: 0;
-        padding: 0;
-        border: 0;
-        background: #7f8c8d;
-        }
-        .login-box{
-        position: absolute;
-        width: 400px;
-        padding: 40px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background: #465464;
-        text-align: center;
-        }
-        .login-box input[type = "text"],.login-box input[type = "password"]{
-        background: none;
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        border: 2px solid #2048b6;
-        padding: 14px 10px;
-        width: 200px;
-        outline:none;
-        color: white;
-        border-radius: 24px;
-        translate: 2s;
-        }
-        .submit{
-        background: none;
-        display: block;
-        margin: 20px auto;
-        text-align: center;
-        border: 2px solid #38a353;
-        padding: 14px 10px;
-        width: 100px;
-        outline:none;
-        color: white;
-        border-radius: 24px;
-        cursor: pointer;
-        }
-    </STYLE>
-</head>
-<body>
-    <form class="login-box" action="Login2.html" method="POST">
-        <h1>LOGIN</h1>
-        <input class="input" type="text" name="" placeholder="UserName">
-        <input class="input" type="password" name="" placeholder="Password">
-        <input class="submit" type="submit" name="" value="Login">
-    </form>
-    <script>
-        var inputUserName = document.getElementsByClassName("input")[0]
-        var inputPassword = document.getElementsByClassName("input")[1]
-        
-        inputUserName.onmouseover = function abc(){
-            inputUserName.style.width = "300px"
-        }
-        inputPassword.onmouseover = function abc(){
-            inputPassword.style.width = "300px"
-        }
-        inputUserName.onmouseout = function abc(){
-            inputUserName.style.width = "200px"
-        }
-        inputPassword.onmouseout = function abc(){
-            inputPassword.style.width = "200px"
-        }
-    </script>
-</body>
+<html >
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="header">
+			<div class="sign">
+				<h1 style="text-align: center;">张贝</h1>
+			</div>
+			<div class="contack">
+				
+			</div>
+			<div class="">
+				
+			</div>
+			<div class="navigation">
+				
+			</div>
+		</div>
+		<div class="main">
+			<div class="slidershow">
+				<div class="slides">
+					<input type="radio" name="r" id="r1" checked/>
+					<input type="radio" name="r" id="r2" />
+					<input type="radio" name="r" id="r3" />
+					<input type="radio" name="r" id="r4" />
+					<input type="radio" name="r" id="r5" />
+					<div class="slide s1"><img src="img/1.jpg" alt=""></div>
+					<div class="slide"><img src="img/2.jpg" alt=""></div>
+					<div class="slide"><img src="img/3.jpg" alt=""></div>
+					<div class="slide"><img src="img/4.jpg" alt=""></div>
+					<div class="slide"><img src="img/5.jpg" alt=""></div>
+				</div>
+				
+				<div class="navigation">
+					
+					<label for="r1" class="bar"></label>
+					<label for="r2" class="bar"></label>
+					<label for="r3" class="bar"></label>
+					<label for="r4" class="bar"></label>
+					<label for="r5" class="bar"></label>
+				</div>
+			</div>	
+		</div>
+	</body>
 </html>

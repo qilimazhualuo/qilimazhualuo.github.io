@@ -6,106 +6,109 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
 	<script type="text/javascript" src="fontawesome-free-5.9.0-web/js/all.js"></script>
+	<link rel="stylesheet" href="css/plc-study.css">
 	<title>PLC学习</title>
 </head>
 <body>
 	<h1>PLC学习</h1>
-	<h2>基本指令</h2>
-	<div class="basic-order">
-		<h3>LD运算a接点</h3>
-		<p>运算开始的a接点指令</p>
-	</div>
-	<div class="basic-order">
-		<h3>LDI运算b接点</h3>
-		<p>运算开始的b接点指令</p>
-	</div>
-	<div class="basic-order">
-		<h3>AND运算a接点</h3>
-		<p>串接的a接点</p>
-	</div>
-	<div class="basic-order">
-		<h3>ANI运算b接点</h3>
-		<p>串接的b接点，后一个为b接点</p>
-	</div>
-	<div class="basic-order">
-		<h3>OR运算a接点</h3>
-		<p>并接的a接点</p>
-	</div>
-	<div class="basic-order">
-		<h3>ORI运算a接点</h3>
-		<p>并接的b接点，后一个为b接点</p>
-	</div>
-	<div class="basic-order">
-		<h3>ORI运算a接点</h3>
-		<p>并接的b接点，后一个为b接点</p>
-	</div>
-	<div class="basic-order">
-		<h3>OUT输出</h3>
-		<p>输出线圈，控制输出电路</p>
-	</div>
-	<div class="basic-order">
-		<h3>ANB方块串接</h3>
-		<p>俩个并联，串接在一起</p>
-	</div>
-	<div class="basic-order">
-		<h3>ORB串联并接</h3>
-		<p>俩个串接并接在一起</p>
-	</div>
-	<div class="basic-order">
-		<h3>SET动作保持</h3>
-		<p>保持后面输出为制定状态</p>
-	</div>
-	<div class="baseic-order">
-		<h3>RST重置清零</h3>
-		<p>将目前的值清零</p>
-	</div>
-	<div class="baseic-order">
-		<h3>MC主控点回路开始</h3>
-		<p>MC主控点回路开始</p>
-	</div>
-	<div class="baseic-order">
-		<h3>MCR主控点回路解除</h3>
-		<p>接触主控点回路</p>
-	</div>
-	<div class="baseic-order">
-		<h3>NOP</h3>
-		<p>空处理</p>
-	</div>
-	<div class="baseic-order">
-		<h3>MPS</h3>
-		<p>分歧支路开始</p>
-	</div>
-	<div class="baseic-order">
-		<h3>MRD</h3>
-		<p>分歧支路继续</p>
-	</div>
-	<div class="baseic-order">
-		<h3>MPP</h3>
-		<p>分歧支路结束</p>
-	</div>
-	<div class="baseic-order">
-		<h3>PLS</h3>
-		<p>一次上升微分输出</p>
-	</div>
-	<div class="baseic-order">
-		<h3>PLF</h3>
-		<p>一次下降微分输出</p>
-	</div>
-	<div class="baseic-order">
-		<h3>LDP</h3>
-		<p>上升沿输出</p>
-	</div>
-	<div class="baseic-order">
-		<h3>LDF</h3>
-		<p>下降沿输出</p>
-	</div>
-	<div class="baseic-order">
-		<h3>INV</h3>
-		<p>反向输出</p>
-	</div>
-	<div class="baseic-order">
-		<h3>END</h3>
-		<p>结束</p>
+	<h2><i class="fas fa-wrench"></i> 基本指令</h2>
+	<div class="basic-order-box">
+		<div class="basic-order">
+			<h3>LD运算a接点</h3>
+			<p>运算开始的a接点指令</p>
+		</div>
+		<div class="basic-order">
+			<h3>LDI运算b接点</h3>
+			<p>运算开始的b接点指令</p>
+		</div>
+		<div class="basic-order">
+			<h3>AND运算a接点</h3>
+			<p>串接的a接点</p>
+		</div>
+		<div class="basic-order">
+			<h3>ANI运算b接点</h3>
+			<p>串接的b接点，后一个为b接点</p>
+		</div>
+		<div class="basic-order">
+			<h3>OR运算a接点</h3>
+			<p>并接的a接点</p>
+		</div>
+		<div class="basic-order">
+			<h3>ORI运算a接点</h3>
+			<p>并接的b接点，后一个为b接点</p>
+		</div>
+		<div class="basic-order">
+			<h3>ORI运算a接点</h3>
+			<p>并接的b接点，后一个为b接点</p>
+		</div>
+		<div class="basic-order">
+			<h3>OUT输出</h3>
+			<p>输出线圈，控制输出电路</p>
+		</div>
+		<div class="basic-order">
+			<h3>ANB方块串接</h3>
+			<p>俩个并联，串接在一起</p>
+		</div>
+		<div class="basic-order">
+			<h3>ORB串联并接</h3>
+			<p>俩个串接并接在一起</p>
+		</div>
+		<div class="basic-order">
+			<h3>SET动作保持</h3>
+			<p>保持后面输出为制定状态</p>
+		</div>
+		<div class="baseic-order">
+			<h3>RST重置清零</h3>
+			<p>将目前的值清零</p>
+		</div>
+		<div class="baseic-order">
+			<h3>MC主控点回路开始</h3>
+			<p>MC主控点回路开始</p>
+		</div>
+		<div class="baseic-order">
+			<h3>MCR主控点回路解除</h3>
+			<p>接触主控点回路</p>
+		</div>
+		<div class="baseic-order">
+			<h3>NOP</h3>
+			<p>空处理</p>
+		</div>
+		<div class="baseic-order">
+			<h3>MPS</h3>
+			<p>分歧支路开始</p>
+		</div>
+		<div class="baseic-order">
+			<h3>MRD</h3>
+			<p>分歧支路继续</p>
+		</div>
+		<div class="baseic-order">
+			<h3>MPP</h3>
+			<p>分歧支路结束</p>
+		</div>
+		<div class="baseic-order">
+			<h3>PLS</h3>
+			<p>一次上升微分输出</p>
+		</div>
+		<div class="baseic-order">
+			<h3>PLF</h3>
+			<p>一次下降微分输出</p>
+		</div>
+		<div class="baseic-order">
+			<h3>LDP</h3>
+			<p>上升沿输出</p>
+		</div>
+		<div class="baseic-order">
+			<h3>LDF</h3>
+			<p>下降沿输出</p>
+		</div>
+		<div class="baseic-order">
+			<h3>INV</h3>
+			<p>反向输出</p>
+		</div>
+		<div class="baseic-order">
+			<h3>END</h3>
+			<p>结束</p>
+		</div>
 	</div>
 </body>
 </html>

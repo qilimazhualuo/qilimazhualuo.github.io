@@ -1,85 +1,35 @@
+#placeholder{
+    width: 500px;
+    overflow: hidden;
+}
 body{
-	margin: 0;
-	padding: 0;
-	background: skyblue;
+    color: #333;
+    background-color: #ccc;
+    margin: 1px 10%;
 }
-#header{
-	width: 1080px;
-	margin: auto;
-	height: 200px;
-	border: aqua 1px solid;
-	margin: auto;
+h1{
+    color: #333;
+    background-color: transparent;
 }
-.sign{
-	
-	width: 100px;
-	height: 200px;
+a{
+    color: #c60;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
 }
-.main{
-	width: 1080px;
-	margin: auto;
-	position: relative;
+ul{
+    padding: 0;
 }
-.slidershow{
-	width: 700px;
-	height: 400px;
-	margin: auto;
-	overflow: hidden;
-	display: relative;
+li{
+    float: left;
+    padding: 10px;
+    list-style: none;
 }
-.slides{
-	width: 500%;
-	height: 100%;
-	display: flex;
+img{
+    display: block;
+    clear:both;
 }
-.navigation{
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translate(-50%);
-	display: flex;
+#description{
+    padding: 10px;
+    
 }
-.bar{
-	display: flex;
-	border: 2px solid #fff;
-	width: 50px;
-	height: 10px;
-	margin: 6px;
-	cursor: pointer;
-}
-.bar:hover{
-	background: #fff;
-}
-input[name="r"]{
-	position: absolute;
-	visibility: hidden;
-}
-.slide{
-	width: 20%;
-	height: 100%;
-	transition: 0.6s;
-}
-.slide img{
-	width: 100%;
-	height: 100%;
-}
-input{
-	z-index: 10;
-}
-#r1:checked ~ .s1{
-	margin-left: 0;
-}
-
-#r2:checked ~ .s1{
-	margin-left: -20%;
-}
-#r3:checked ~ .s1{
-	margin-left: -40%;
-}
-#r4:checked ~ .s1{
-	margin-left: -60%;
-}
-#r5:checked ~ .s1{
-	margin-left: -80%;
-}
-

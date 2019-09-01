@@ -1,7 +1,0 @@
-.basic-order{
-    visibility: hidden;
-}
-.basic-order-box:hover > .basic-order{
-    visibility: visible;
-    
-}

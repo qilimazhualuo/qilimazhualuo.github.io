@@ -1,35 +1,106 @@
-#placeholder{
-    width: 500px;
-    overflow: hidden;
-}
 body{
-    color: #333;
-    background-color: #ccc;
-    margin: 1px 10%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../img/head-img.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+
 }
-h1{
-    color: #333;
-    background-color: transparent;
+#head{
+	width: 1200px;
+	height: 250px;
+	margin: auto;
+	
 }
-a{
-    color: #c60;
-    background-color: transparent;
-    font-weight: bold;
-    text-decoration: none;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'montserrat', sans-serif;
+	box-sizing: border-box;
 }
-ul{
-    padding: 0;
+
+.services-section {
+	background: rgba(80,80,80,0.5);
+	background-size: cover;
+	padding: 60px 0;
+
 }
-li{
-    float: left;
-    padding: 10px;
-    list-style: none;
+
+.inner-width {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 20px;
+	overflow: hidden;
 }
-img{
-    display: block;
-    clear:both;
+.section-title {
+	text-align: center;
+	color: #ddd;
+	text-transform: uppercase;
+	font-size: 30px;
 }
-#description{
-    padding: 10px;
-    
+.border {
+	width: 160px;
+	height: 2px;
+	background: #82ccdd;
+	margin: 40px auto;
+}
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.service-box {
+	max-width: 33.33%;
+	padding: 10px;
+	text-align: center;
+	color: #ddd;
+	cursor: pointer;
+}
+.service-icon {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border: 3px solid #82ccdd;
+	color: #82ccdd;
+	transform: rotate(45deg);
+	margin-bottom: 30px;
+	margin-top: 16px;
+	transition: 0.3s linear;
+}
+.service-icon i {
+	line-height: 70px;
+	transform: rotate(-45deg);
+	font-size: 26px;
+}
+.service-box:hover .service-icon {
+	background: #82ccdd;
+	color: #ddd;
+}
+.service-title {
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.service-desc {
+	font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+	.service-box {
+		max-width: 45%;
+				}
+			}
+
+@media screen and (max-width: 768px) {
+	.service-box {
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.service-box {
+		max-width: 100%;
+	}
 }

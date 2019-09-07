@@ -1,106 +1,31 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-image: url(https://image.scol.com.cn/data/attachment/forum/201812/31/130850lphshs95cq3fz941.jpg);
-	background-repeat:no-repeat;
-	background-size:100% 100%;
-	-moz-background-size:100% 100%;
-
+	background: #34495e;
 }
-#head{
-	width: 1200px;
-	height: 250px;
-	margin: auto;
-	text-align: center;
-}
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'montserrat', sans-serif;
-	box-sizing: border-box;
-}
-
-.services-section {
-	background: rgba(80,80,80,0.5);
-	background-size: cover;
-	padding: 60px 0;
-
-}
-
-.inner-width {
-	width: 100%;
-	max-width: 1200px;
-	margin: auto;
-	padding: 0 20px;
+.slides{
+	width: 700px;
+	height: 400px;
 	overflow: hidden;
+	background: white;
 }
-.section-title {
-	text-align: center;
-	color: #ddd;
-	text-transform: uppercase;
-	font-size: 30px;
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
-.border {
-	width: 160px;
-	height: 2px;
-	background: #82ccdd;
-	margin: 40px auto;
-}
-.services-container {
+.navi{
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 }
-.service-box {
-	max-width: 33.33%;
-	padding: 10px;
-	text-align: center;
-	color: #ddd;
+.bar{
+	border: 2px solid #34495E;
+	width: 50px;
+	height: 10px;
+	margin: 6px;
 	cursor: pointer;
-}
-.service-icon {
-	display: inline-block;
-	width: 70px;
-	height: 70px;
-	border: 3px solid #82ccdd;
-	color: #82ccdd;
-	transform: rotate(45deg);
-	margin-bottom: 30px;
-	margin-top: 16px;
-	transition: 0.3s linear;
-}
-.service-icon i {
-	line-height: 70px;
-	transform: rotate(-45deg);
-	font-size: 26px;
-}
-.service-box:hover .service-icon {
-	background: #82ccdd;
-	color: #ddd;
-}
-.service-title {
-	font-size: 18px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
-.service-desc {
-	font-size: 14px;
-}
-
-@media screen and (max-width: 960px) {
-	.service-box {
-		max-width: 45%;
-				}
-			}
-
-@media screen and (max-width: 768px) {
-	.service-box {
-		max-width: 50%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.service-box {
-		max-width: 100%;
-	}
 }

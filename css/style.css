@@ -14,6 +14,7 @@ body{
 }
 .input{
 	position: absolute;
+	
 }
 .slides{
 	width: 500%;
@@ -23,9 +24,13 @@ body{
 }
 .slide{
 	width: 20%;
-	display: inline;
+	height: 100%;
+	position: absolute;
 }
-
+.slide img{
+	width: 100%;
+	height: 100%;
+}
 .navi{
 	bottom: 20px;
 	left: 50%;

@@ -1,10 +1,10 @@
 import pygame
 from pygame.sprite import Sprite
 
-class Bullets(Sprite):
+class Bullet(Sprite):
     
     def __init__(self,ai_setting,screen,ship):
-        super(Bullets,self).__init__
+        super(Bullet,self).__init__()
         self.screen = screen
         
         self.rect = pygame.Rect(0,0,ai_setting.bullet_width,ai_setting.bullet_height)

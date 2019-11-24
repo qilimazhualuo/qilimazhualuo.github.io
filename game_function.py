@@ -1,6 +1,6 @@
 import sys
 import pygame
-from bullet import Bullets
+from bullet import Bullet
 
 def check_event(ship,ai_setting,screen,bullets):
     
@@ -18,8 +18,8 @@ def check_event_keydown(event,ship,ai_setting,screen,bullets):
     elif event.key == pygame.K_LEFT:
         ship.moving_left = True
     elif event.key == pygame.K_SPACE:
-        new_bellet = Bullets(ai_setting,screen,ship)
-        bullets.add(new_bellet)
+        new_bullet = Bullet(ai_setting,screen,ship)
+        bullets.add(new_bullet)
     
 def check_event_keyup(event,ship):   
     if event.key == pygame.K_RIGHT:

@@ -1,15 +1,15 @@
 class Setting():
-    #存储设置类
     def __init__(self):
-        #初始化游戏设置
+        #初始化游戏
+
         #屏幕设置
         self.screen_width = 1200
         self.screen_height = 800
-        self.bg_color = (230,230,230)
-        self.ship_speed = 1.5
-        
-        #子弹
-        self.bullet_speed = 1
+        self.bg_color = (226, 106, 106)
+        #飞船速度
+        self.ship_speed_factory = 1
+        #子弹设置
+        self.bullet_speed_factory = 0.1
         self.bullet_width = 3
-        self.bullet_height = 5
-        self.bullet_color = 255,60,60
+        self.bullet_height = -10
+        self.bullet_color = (192, 57, 43)

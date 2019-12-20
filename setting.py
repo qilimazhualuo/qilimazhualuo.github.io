@@ -10,10 +10,10 @@ class Setting():
         self.ship_speed_factory = 0.4
         #子弹设置
         self.bullet_speed_factory = 0.2
-        self.bullet_width = 300
+        self.bullet_width = 3
         self.bullet_height = -10
         self.bullet_color = (192, 57, 43)
-        self.max_account = 10
+        self.max_account = 100
         #外星人设置
         self.alien_speed_factory = 0.5
         self.fleet_drop_speed = 10

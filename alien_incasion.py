@@ -21,9 +21,8 @@ def run_game():
     while True:
         #执行操作
         gf.check_events(ship,ai_settings,screen,bullets)
-        ship.update(ai_settings)
-        #绘制屏幕
-        gf.update_bullets(aliens,bullets) 
+        gf.update_ship(ship,ai_settings)
+        gf.update_bullets(aliens,bullets,ai_settings,screen) 
         gf.update_aliens(ai_settings,aliens)
         gf.update_screen(screen,ai_settings,ship,bullets,aliens)
 

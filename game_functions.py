@@ -3,6 +3,7 @@ import pygame
 from bullet import  Bullet
 from bullet import Bullet
 from alien import Alien
+from ship import Ship
 def check_events(ship,ai_settings,screen,bullets):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -25,6 +26,8 @@ def check_keyup_event(event,ship):
         ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
+def update_ship(ship,ai_settings):
+    ship.update(ai_settings)
 def get_number_aliens_x(ai_settings,alien_width):
     """"计算x方向容纳alien数量"""
     available_space_x = ai_settings.screen_width - 2 * alien_width
@@ -46,6 +49,7 @@ def create_fleet(ai_settings,screen,aliens):
     alien = Alien(ai_settings,screen)
     number_aliens_x = get_number_aliens_x(ai_settings,alien.rect.width)
     number_rows = 3
+    print("1")
     #创建第一行外星人
     for row_number in range(number_rows):
         for alien_number in range(number_aliens_x):
@@ -65,12 +69,18 @@ def update_aliens(ai_settings,aliens):
     """"检查是否处于边缘，调整位置"""
     check_fleet_edges(ai_settings,aliens)
     aliens.update()
-def update_bullets(aliens,bullets):
+def update_bullets(aliens,bullets,ai_setting,screen):
     bullets.update()
     for bullet in bullets.copy():
         if bullet.rect.bottom < 0:
             bullets.remove(bullet)
+    check_bullet_alien_collisions(bullets,aliens,ai_setting,screen)
+def check_bullet_alien_collisions(bullets,aliens,ai_settings,screen):
+    #检测子弹和外星人碰撞
     collisions = pygame.sprite.groupcollide(bullets,aliens,True,True)
+    if len(aliens) <= 0:
+        bullets.empty()
+        create_fleet(ai_settings,screen,aliens)
 def update_screen(screen,ai_settings,ship,bullets,aliens):
     #重新绘制屏幕
     screen.fill(ai_settings.bg_color)

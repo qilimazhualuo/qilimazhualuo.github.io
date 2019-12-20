@@ -23,10 +23,7 @@ def run_game():
         gf.check_events(ship,ai_settings,screen,bullets)
         ship.update(ai_settings)
         #绘制屏幕
-        bullets.update()
-        for bullet in bullets.copy():
-            if bullet.rect.bottom < 0:
-                bullets.remove(bullet)
+        gf.update_aliens(ai_settings,aliens)
         gf.update_screen(screen,ai_settings,ship,bullets,aliens)
 
 run_game()

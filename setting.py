@@ -14,3 +14,7 @@ class Setting():
         self.bullet_height = -10
         self.bullet_color = (192, 57, 43)
         self.max_account = 10
+        #外星人设置
+        self.alien_speed_factory = 1
+        self.fleet_drop_speed = 10
+        self.fleet_direction = 1

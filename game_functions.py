@@ -30,11 +30,6 @@ def get_number_aliens_x(ai_settings,alien_width):
     available_space_x = ai_settings.screen_width - 2 * alien_width
     number_aliens_x = int(available_space_x / (2 * alien_width))
     return number_aliens_x
-# def get_number_aliens_y(ai_settings,alien_height):
-#     """"计算x方向容纳alien数量"""
-#     available_space_y = ai_settings.screen_height - 3 * alien_height
-#     number_rows = int(available_space_y / (2 * alien_height))
-#     return number_rows
 def creat_alien(ai_settings,screen,aliens,alien_number,row_number):
     """"新建alien"""
     alien = Alien(ai_settings,screen)

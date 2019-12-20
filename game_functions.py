@@ -3,7 +3,6 @@ import pygame
 from bullet import  Bullet
 from bullet import Bullet
 from alien import Alien
-
 def check_events(ship,ai_settings,screen,bullets):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -18,7 +17,7 @@ def check_keydown_event(event,ship,ai_settings,screen,bullets):
     elif event.key == pygame.K_LEFT:
         ship.moving_left = True
     elif event.key == pygame.K_SPACE:
-        if len(bullets) < 3:
+        if len(bullets) < ai_settings.max_account:
             new_bullet = Bullet(ai_settings,screen,ship)
             bullets.add(new_bullet)
 def check_keyup_event(event,ship):
@@ -26,20 +25,26 @@ def check_keyup_event(event,ship):
         ship.moving_right = False
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
-def creat_fleet(ai_settings,screen,aliens):
-    """创建外星人群"""
+def creat_alien(ai_setting,screen,):
+    '''创建一个外星人并放置在当前行'''
     alien = Alien(ai_settings,screen)
     alien_width = alien.rect.width
-    available_space_x = ai_settings.screen_width - 2*alien_width
-    number_aliens_x = int(available_space_x/(2*alien_width))
-
+    alien.x = alien.rect.width + alien_number * alien.rect.width * 2
+    alien.rect.x = alien.x
+    aliens.add(alien)
+def create_fleet(ai_settings,screen,aliens):
+    """创建一个外星人群"""
+    #创建外星人
+    alien = Alien(ai_settings,screen)
+    alien.width = alien.rect.width
+    available_space_x = ai_settings.screen_width - 2 * alien.width
+    number_aliens_x = int(available_space_x / (2 * alien.width))
     #创建第一行外星人
-    for ailen_number in range(number_aliens_x):
+    for alien_number in range(number_aliens_x):
         alien = Alien(ai_settings,screen)
-        alien.x = alien_width = 2*alien_width*ailen_number
+        alien.x = alien.rect.width + alien_number * alien.rect.width * 2
         alien.rect.x = alien.x
         aliens.add(alien)
-
 def update_screen(screen,ai_settings,ship,bullets,aliens):
     #重新绘制屏幕
     screen.fill(ai_settings.bg_color)
@@ -48,6 +53,5 @@ def update_screen(screen,ai_settings,ship,bullets,aliens):
         bullet.draw_bullet()
     ship.blitme()
     aliens.draw(screen)
-    aliens.blitme()
     #让最近绘制的屏幕可见
     pygame.display.flip()

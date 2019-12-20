@@ -32,6 +32,7 @@ def creat_alien(ai_setting,screen,):
     alien.x = alien.rect.width + alien_number * alien.rect.width * 2
     alien.rect.x = alien.x
     aliens.add(alien)
+def aaaa
 def create_fleet(ai_settings,screen,aliens):
     """创建一个外星人群"""
     #创建外星人

@@ -5,7 +5,7 @@ class Ship():
         self.screen = screen
 
         #加载飞船图像
-        self.image = pygame.image.load('D:/study/python/images/ship.png')
+        self.image = pygame.image.load('images/ship.png')
         self.rect = self.image.get_rect()
         screen_rect = screen.get_rect()
         self.screen_rect = screen.get_rect()

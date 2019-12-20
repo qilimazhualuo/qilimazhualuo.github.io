@@ -25,6 +25,8 @@ class Ship():
         if self.moving_left and self.rect.left > self.screen_rect.left:
             self.center -= ai_settings.ship_speed_factory
         self.rect.centerx =self.center
+    def center_ship(self):
+        self.rect.centerx = self.screen_rect.centerx
     def blitme(self):
         #在指定位置绘制飞船
         self.screen.blit(self.image,self.rect)

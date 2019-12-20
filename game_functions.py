@@ -4,6 +4,7 @@ from bullet import  Bullet
 from bullet import Bullet
 from alien import Alien
 from game_stats import GameStats
+from time import sleep
 def check_events(ship,ai_settings,screen,bullets):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -64,14 +65,25 @@ def change_fleet_direction(ai_settings,aliens):
     for alien in aliens.sprites():
         alien.rect.y += ai_settings.fleet_drop_speed
     ai_settings.fleet_direction *= -1
-def update_aliens(ai_settings,aliens,ship,stats):
+def update_aliens(ai_settings,aliens,ship,stats,bullets,screen):
     """"检查是否处于边缘，调整位置"""
     check_fleet_edges(ai_settings,aliens)
     aliens.update()
     #检测外星人和飞船碰撞
     if pygame.sprite.spritecollideany(ship,aliens):
-        stats.ships_left -= 1
-        print(stats.ships_left)
+        ship_hit(stats,aliens,bullets,ai_settings,screen,ship)
+def ship_hit(stats,aliens,bullets,ai_settings,screen,ship):
+    #飞船数量-1
+    stats.ships_left -= 1
+    print(stats.ships_left)
+    #清空子弹和外星人
+    aliens.empty()
+    bullets.empty()
+    #创建一群新的外星人，将飞船放置于中心
+    create_fleet(ai_settings,screen,aliens)
+    ship.center_ship()
+    #暂停
+    sleep(0.5)
 def update_bullets(aliens,bullets,ai_setting,screen):
     bullets.update()
     for bullet in bullets.copy():

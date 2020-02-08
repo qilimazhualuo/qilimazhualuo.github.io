@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
 		<script type="text/javascript" src="js/script.js"></script>
 		<title>我的网页</title>
 	</head>
@@ -33,10 +34,11 @@
 		<div class="control">
 			
 			<div class="btn">
-				<span onclick="prev()"><img src="img/prev.png"></span>
-				<span onclick="bf()"><img src="img/play.png"></span>
-				<span onclick="pause()"><img src="img/pause.png"></span>
-				<span onclick="next()"><img src="img/next.png"></span>
+				
+				<i class="fa fa-step-backward" aria-hidden="true" onclick="prev()"></i>
+				<i class="fa fa-play" aria-hidden="true" onclick="bf()"></i>
+				<i class="fa fa-pause" aria-hidden="true" onclick="pause()"></i>
+				<i class="fa fa-step-forward" aria-hidden="true" onclick="next()"></i>
 			</div>
 			
 			<div class="progress">

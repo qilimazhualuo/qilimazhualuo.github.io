@@ -53,6 +53,7 @@ body{
 }
 .btn i{
 	margin: 0 30px;
+	cursor: pointer;
 }
 .progress{
 	position: relative;

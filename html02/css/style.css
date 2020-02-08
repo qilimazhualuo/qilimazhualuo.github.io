@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../img/bg3.jpg) no-repeat;
+	position: relative;
+	height: 100vh;
+}
+.head{
+	margin: 10px;
+	color: white;
+	position: relative;
+	font-size: 20px;
+}
+.back{
+	float: left;
+	top: 0;
+	
+}
+.musicName{
+	margin: 0 10px;
+	position: relative;
+	display: inline-block;
+}
+.head h5{
+	display: inline-block;
+}
+.head h6{
+	display: inline-block;
+}
+.share{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+}
+#plate{
+	position: absolute;
+	top: 30%;
+	width: 80%;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 0 auto;
+}

@@ -1,3 +1,6 @@
+var now = 1;
+
+
 function bf(){
 	var audio = document.getElementById("music1");
 	audio.play();
@@ -8,7 +11,7 @@ function pause(){
 }
 function prev(){
 	var audio = document.getElementById("music1");
-	
+	var showImage = document.getElementById("show");
 }
 function next(){
 	var audio = document.getElementById("music1");

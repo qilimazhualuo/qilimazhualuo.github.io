@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<script type="text/javascript" src="js/script.js"></script>
+		<title>我的网页</title>
+	</head>
+	<body>
+		<audio src="audio/1.mp3" id="music1">
+			您的浏览器不支持audio
+		</audio>
+		
+		
+		<div class="imgBox"> 
+			
+			<div class="preview">
+				
+				<span class="previewImg" onclick="one()"><img src="img/1.jpg" ></span>
+				<span class="previewImg" onclick="two()"><img src="img/2.jpg" ></span>
+				<span class="previewImg" onclick="three()"><img src="img/3.jpg" ></span>
+				<span class="previewImg" onclick="four()"><img src="img/4.jpg" ></span>
+				<span class="previewImg" onclick="five()"><img src="img/5.jpg" ></span>
+				<span class="previewImg" onclick="six()"><img src="img/6.jpg" ></span>
+			</div>
+			<div class="playing">
+				
+				<img src="img/1.jpg" id="show">
+			</div>
+		</div>
+		
+		<div class="control">
+			
+			<div class="btn">
+				
+				<i class="fa fa-step-backward" aria-hidden="true" onclick="prev()"></i>
+				<i class="fa fa-play" aria-hidden="true" onclick="bf()"></i>
+				<i class="fa fa-pause" aria-hidden="true" onclick="pause()"></i>
+				<i class="fa fa-step-forward" aria-hidden="true" onclick="next()"></i>
+			</div>
+			
+			<div class="progress">
+				<span class="start"></span>
+				<div class="progress-bar">
+					<div class="now"></div>
+				</div>
+				<span class="end"></span>
+			</div>
+		</div>
+	</body>
+</html>

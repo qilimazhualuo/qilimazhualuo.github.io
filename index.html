@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/script.js"></script>
+		<title>我的网页</title>
+	</head>
+	<body>
+		<audio src="audio/1.mp3" id="music1">
+			您的浏览器不支持audio
+		</audio>
+		
+		
+		<div class="imgBox"> 
+			
+			<div class="preview">
+				
+				<span class="previewImg" onclick="one()"><img src="img/1.jpg" ></span>
+				<span class="previewImg" onclick="two()"><img src="img/2.jpg" ></span>
+				<span class="previewImg" onclick="three()"><img src="img/3.jpg" ></span>
+				<span class="previewImg" onclick="four()"><img src="img/4.jpg" ></span>
+				<span class="previewImg" onclick="five()"><img src="img/5.jpg" ></span>
+				<span class="previewImg" onclick="six()"><img src="img/6.jpg" ></span>
+			</div>
+			<div class="playing">
+				
+				<img src="img/1.jpg" id="show">
+			</div>
+		</div>
+		
+		<div class="control">
+			
+			<div class="btn">
+				<span onclick="prev()"><img src="img/prev.png"></span>
+				<span onclick="bf()"><img src="img/play.png"></span>
+				<span onclick="pause()"><img src="img/pause.png"></span>
+				<span onclick="next()"><img src="img/next.png"></span>
+			</div>
+			
+			<div class="progress">
+				<span class="start"></span>
+				<div class="progress-bar">
+					<div class="now"></div>
+				</div>
+				<span class="end"></span>
+			</div>
+		</div>
+	</body>
+</html>

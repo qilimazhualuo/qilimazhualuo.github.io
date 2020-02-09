@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<title>仿网易云app</title>
+	</head>
+	<body onload="load()">
+		<img src="img/bg3.jpg" style="position: absolute;width: 100%;height: 100vh;z-index: -1000;">
+		<div class="head">
+			<span class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+			<div class="musicName">
+				<h5>心领神会</h5><br><h6>莫文蔚 ></h6>
+			</div>
+			
+			<div class="share">
+				<i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+				<i class="fa fa-share-alt" aria-hidden="true"></i>
+			</div>	
+		</div>
+		
+		<div id="plate">
+			<img id="plateimg" src="img/1.jpg">
+		</div>
+		
+		<audio src="audio/1.mp3" id="music">
+			当前浏览器不支持audio
+		</audio>
+		<div class="control">
+			<span id="prev" clas="btn"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
+			<span id="bofang" class="btn"><i class="fa fa-play" aria-hidden="true"></i></span>
+			<span id="zanting" class="btn"><i class="fa fa-pause" aria-hidden="true"></i></span>
+			<span id="next" class="btn"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
+		</div>
+		<script type="text/javascript">
+			var i = 1;
+			bofang.onclick = ()=>{
+				music.play();
+			}
+			zanting.onclick = ()=>{
+				music.pause();
+			}
+			prev.onclick = ()=>{
+				if (i>1){ 
+					i -= 1;
+				}else{
+					i=5;
+				}
+				plateimg.src = `img/${i}.jpg`;
+				music.src = `audio/${i}.mp3`;
+			}
+			next.onclick = ()=>{
+				if (i<5){
+					i += 1;
+				}else{
+					i=1;
+				}
+				
+				plateimg.src = `img/${i}.jpg`;
+				music.src = `audio/${i}.mp3`;
+				
+			}
+		</script>
+	</body>
+</html>

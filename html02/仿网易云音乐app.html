@@ -25,12 +25,25 @@
 			<img src="img/1.jpg">
 		</div>
 		
+		<audio src="audio/1.mp3" id="music">
+			当前浏览器不支持audio
+		</audio>
 		<div class="control">
-			<span id="prev" class="btn"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
-			<span id="play" class="btn"><i class="fa fa-play" aria-hidden="true"></i></span>
-			<span id="pause" class="btn"><i class="fa fa-pause" aria-hidden="true"></i></span>
+			<span id="prev" clas="btn"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
+			<span id="bofang" class="btn"><i class="fa fa-play" aria-hidden="true"></i></span>
+			<span id="zanting" class="btn"><i class="fa fa-pause" aria-hidden="true"></i></span>
 			<span id="next" class="btn"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
 		</div>
-		
+		<script type="text/javascript">
+			bofang.onclick = ()=>{
+				music.play();
+			}
+			zanting.onclick = ()=>{
+				music.pause();
+			}
+			prev.onclick = ()=>{
+				
+			}
+		</script>
 	</body>
 </html>

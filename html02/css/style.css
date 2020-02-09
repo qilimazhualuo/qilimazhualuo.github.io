@@ -1,26 +1,22 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 body{
 	position: relative;
 	height: 100vh;
 }
 .head{
-	margin: 10px;
+	margin: 10px 0 ;
 	color: white;
-	position: relative;
-	font-size: 20px;
-}
-.back{
-	float: left;
-	top: 0;
-	
+	width: 100%;
+	display: flex;
+	position: absolute;
+	font-size: 50px;
 }
 .musicName{
 	margin: 0 10px;
-	position: relative;
-	display: inline-block;
 }
 .head h5{
 	display: inline-block;
@@ -31,7 +27,7 @@ body{
 .share{
 	display: inline-block;
 	position: absolute;
-	right: 0;
+	right: 20px;
 }
 
 
@@ -56,7 +52,7 @@ body{
 	to{transform: rotate(360deg);}
 }
 #plate::before{
-	content: "";
+	content: '';
 	position: absolute;
 	width: 400px;
 	height: 400px;
@@ -67,4 +63,16 @@ body{
 	color: white;
 	border-radius: 50%;
 	border: 100px solid #46273b;
+}
+.control{
+	position: absolute;
+	width: 100%;
+	height: 140px;
+	bottom: 0;
+	font-size: 500%;
+}
+.btn{
+	margin-left: 12%;
+	cursor: pointer;
+	
 }

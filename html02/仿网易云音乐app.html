@@ -8,7 +8,7 @@
 		<title>仿网易云app</title>
 	</head>
 	<body onload="load()">
-		<img src="img/bg3.jpg" style="width: 100%;height: 100vh;position: absolute;z-index: -1000;">
+		<img src="img/bg3.jpg" style="position: absolute;width: 100%;height: 100vh;z-index: -1000;">
 		<div class="head">
 			<span class="back"><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
 			<div class="musicName">
@@ -20,11 +20,17 @@
 				<i class="fa fa-share-alt" aria-hidden="true"></i>
 			</div>	
 		</div>
+		
 		<div id="plate">
 			<img src="img/1.jpg">
 		</div>
 		
-		
+		<div class="control">
+			<span id="prev" class="btn"><i class="fa fa-step-backward" aria-hidden="true"></i></span>
+			<span id="play" class="btn"><i class="fa fa-play" aria-hidden="true"></i></span>
+			<span id="pause" class="btn"><i class="fa fa-pause" aria-hidden="true"></i></span>
+			<span id="next" class="btn"><i class="fa fa-step-forward" aria-hidden="true"></i></span>
+		</div>
 		
 	</body>
 </html>

@@ -38,9 +38,11 @@
 			var i = 1;
 			bofang.onclick = ()=>{
 				music.play();
+				plateimg.style.cssText='animation:rotate 20s linear infinite;';
 			}
 			zanting.onclick = ()=>{
 				music.pause();
+				plateimg.style.cssText='animation:rotate1 20s linear infinite;';
 			}
 			prev.onclick = ()=>{
 				if (i>1){ 

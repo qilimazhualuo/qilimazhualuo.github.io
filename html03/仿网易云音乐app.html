@@ -52,6 +52,7 @@
 				}
 				plateimg.src = `img/${i}.jpg`;
 				music.src = `audio/${i}.mp3`;
+				plateimg.style.cssText='animation:rotate1 20s linear infinite;';
 			}
 			next.onclick = ()=>{
 				if (i<5){
@@ -62,7 +63,7 @@
 				
 				plateimg.src = `img/${i}.jpg`;
 				music.src = `audio/${i}.mp3`;
-				
+				plateimg.style.cssText='animation:rotate1 20s linear infinite;';
 			}
 		</script>
 	</body>

@@ -72,7 +72,30 @@ body{
 	font-size: 500%;
 }
 .btn{
-	margin-left: 20%;
 	cursor: pointer;
 	
+}
+#prev{
+	cursor: pointer;
+	position: absolute;
+	left: 20%;
+	transform: translate(-50%);
+}
+#bofang{
+	cursor: pointer;
+	position: absolute;
+	left: 40%;
+	transform: translate(-50%);
+}
+#zanting{
+	cursor: pointer;
+	position: absolute;
+	left: 60%;
+	transform: translate(-50%);
+}
+#next{
+	cursor: pointer;
+	position: absolute;
+	left: 80%;
+	transform: translate(-50%);
 }
